@@ -45,5 +45,31 @@ public class Operations {
         symmetricDiff.removeAll(temp);
         System.out.println("Symmetric Difference: " + symmetricDiff);
 
+        Set<String> fruits = new HashSet<>();
+        fruits.add("apple"); // Returns true, "apple" is added
+        fruits.add("apple"); // Returns false, "apple" is already in the set
+
+        Set<String> setA = new HashSet<>(Arrays.asList("apple", "banana", "cherry"));
+        Set<String> setB = new HashSet<>(Arrays.asList("banana", "date"));
+
+        setA.removeAll(setB);
+        // setA now contains: ["apple", "cherry"]
+
+        Set<String> fruits2 = new HashSet<>(Arrays.asList("apple", "banana"));
+        fruits2.contains("apple"); // Returns true
+        fruits2.contains("cherry"); // Returns false
+
+        Set<String> emptySet = new HashSet<>();
+        emptySet.isEmpty(); // Returns true
+
+        Set<String> setsA = new HashSet<>(Arrays.asList("apple", "banana", "cherry"));
+        Set<String> setsB = new HashSet<>(Arrays.asList("banana", "apple"));
+
+        setsA.containsAll(setsB); // Returns true, setA contains all elements of setB
+
+        Set<String> fruitSet = new HashSet<>(Arrays.asList("apple", "banana"));
+        int size = fruitSet.size(); // Returns 2
+        System.out.println(size);
+
     }
 }
