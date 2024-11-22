@@ -12,7 +12,6 @@ public class Operations {
 
         // operation 1 - union -> combination of all unique elements from both sets
         // Real-world use: Merging data from two sources without duplicating entries.
-
         set1.addAll(set2);
         System.out.println("Union: " + set1);
 
@@ -51,7 +50,6 @@ public class Operations {
 
         Set<String> setA = new HashSet<>(Arrays.asList("apple", "banana", "cherry"));
         Set<String> setB = new HashSet<>(Arrays.asList("banana", "date"));
-
         setA.removeAll(setB);
         // setA now contains: ["apple", "cherry"]
 
