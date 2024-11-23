@@ -47,7 +47,7 @@ public class Operations {
         Set<String> fruits = new HashSet<>();
         fruits.add("apple"); // Returns true, "apple" is added
         fruits.add("apple"); // Returns false, "apple" is already in the set
-
+        System.out.println(fruits);
         Set<String> setA = new HashSet<>(Arrays.asList("apple", "banana", "cherry"));
         Set<String> setB = new HashSet<>(Arrays.asList("banana", "date"));
         setA.removeAll(setB);
