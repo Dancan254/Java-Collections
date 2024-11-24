@@ -52,7 +52,6 @@ public class Operations {
         Set<String> setB = new HashSet<>(Arrays.asList("banana", "date"));
         setA.removeAll(setB);
         // setA now contains: ["apple", "cherry"]
-
         Set<String> fruits2 = new HashSet<>(Arrays.asList("apple", "banana"));
         fruits2.contains("apple"); // Returns true
         fruits2.contains("cherry"); // Returns false
@@ -62,7 +61,6 @@ public class Operations {
 
         Set<String> setsA = new HashSet<>(Arrays.asList("apple", "banana", "cherry"));
         Set<String> setsB = new HashSet<>(Arrays.asList("banana", "apple"));
-
         setsA.containsAll(setsB); // Returns true, setA contains all elements of setB
 
         Set<String> fruitSet = new HashSet<>(Arrays.asList("apple", "banana"));
