@@ -2,6 +2,7 @@ package org.collections.hashing;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 public class Hashing {
@@ -24,7 +25,7 @@ public class Hashing {
         for (String setValue : set) {
             System.out.println(setValue + " -> ");
             for (int i = 0; i < list.size(); i++) {
-                if (setValue == list.get(i)) {
+                if (Objects.equals(setValue, list.get(i))) {
                     System.out.println("found at index: " + i);
                 }
             }
