@@ -28,8 +28,8 @@ public class Contact {
         if (phone > 0) {
             String phoneStr = String.valueOf(phone);
             // format the phone number
-            phoneStr = phoneStr.substring(0, 3) + "-" + phoneStr.substring(3, 6) + "-" + phoneStr.substring(6);
             phones.add(phoneStr);
+            phoneStr = phoneStr.substring(0, 3) + "-" + phoneStr.substring(3, 6) + "-" + phoneStr.substring(6);
         }
     }
 
