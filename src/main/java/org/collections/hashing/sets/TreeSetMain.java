@@ -54,5 +54,9 @@ public class TreeSetMain {
             System.out.printf("ceiling of %s: %s%n", c.getName(), phoneContacts.ceiling(c));
             System.out.printf("higher of %s: %s%n", c.getName(), phoneContacts.higher(c));
         }
+
+        NavigableSet<Contact> descendingSet = phoneContacts.descendingSet();
+        System.out.println("Descending set:");
+        descendingSet.forEach(System.out::println);
     }
 }
